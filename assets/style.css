@@ -1,0 +1,72 @@
+body {
+  padding: 0.5em;
+  background: white;
+}
+
+
+#box1 {
+  z-index: 100;
+  position: fixed;
+}
+
+.plates-index {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  overflow-x: scroll;
+  touch-action: none;
+}
+
+.plate {
+  display: inline-block;
+  height: 92vh;
+}
+
+img {
+  height: inherit;
+}
+
+#plate0 {
+  padding-left: 20em;
+}
+
+/*START COPY STYLING*/
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text {
+  color: white;
+  mix-blend-mode: difference;
+  filter: blur(0.25px);
+  font-family: 'Times New Roman';
+  font-size: 1em;
+  -webkit-text-stroke: 0.035em;
+  -moz-text-stroke: 0.035em;
+  text-stroke: 0.035em;
+  letter-spacing: 0.05em;
+  line-height: 1.25em;
+}
+
+.in {
+  text-indent: 1em;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+/*END COPY STYLING*/

@@ -1,4 +1,14 @@
-console.log('Hello World!');
+ console.log('Hello World!');
+
+ let platesIndex = document.querySelector('.plates-index');
+
+ platesIndex.addEventListener('wheel', (event) => {
+  event.preventDefault();
+
+  platesIsndex.scrollBy({
+    left: event.deltaY < 0 ? -30 : 30,
+  });
+});
 
 // const toggle = document.querySelector(".toggle")
 // const info1 = document.querySelector(".info1")
@@ -7,16 +17,15 @@ console.log('Hello World!');
 //     info1.classList.toggle("invisible")
 // })
 
-let platesIndex = document.querySelector('.plates-index');
 const buttonRight = document.getElementById('right');
 const buttonLeft = document.getElementById('left');
 
-buttonRight.onclick = function () {
-platesIndex.scrollLeft += 250;
-};
-buttonLeft.onclick = function () {
-platesIndex.scrollLeft -= 250;
-};
+// buttonRight.onclick = function () {
+// platesIndex.scrollLeft += 250;
+// };
+// buttonLeft.onclick = function () {
+// platesIndex.scrollLeft -= 250;
+// };
 
     fetch('https://api.are.na/v2/channels/shravani-bagawde-plates/contents?per=100')
     .then((response) => response.json())
@@ -41,8 +50,8 @@ platesIndex.scrollLeft -= 250;
         title.className = 'title';
         title.classList.add('text');
     
-        plate.appendChild(title);
         plate.appendChild(image);
+        plate.appendChild(title);
 
         platesIndex.appendChild(plate); 
     }
