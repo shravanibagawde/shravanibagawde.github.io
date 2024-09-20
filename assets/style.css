@@ -18,17 +18,18 @@ body {
 }
 
 .plate {
-  display: inline-block;
-  height: 92vh;
+  width: 25em;
+  height: auto;
 }
 
 img {
-  height: inherit;
+  width: inherit;
 }
 
 #plate0 {
   padding-left: 20em;
 }
+
 
 /*START COPY STYLING*/
 
@@ -40,7 +41,7 @@ html {
 .text {
   color: white;
   mix-blend-mode: difference;
-  filter: blur(0.25px);
+  filter: blur(0.15px);
   font-family: 'Times New Roman';
   font-size: 1em;
   -webkit-text-stroke: 0.035em;
@@ -48,6 +49,10 @@ html {
   text-stroke: 0.035em;
   letter-spacing: 0.05em;
   line-height: 1.25em;
+}
+
+.cap {
+  font-size: 1em;
 }
 
 .in {
@@ -70,3 +75,29 @@ a:hover {
 }
 
 /*END COPY STYLING*/
+
+
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 750px) {
+
+.plates-index {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 93vw;
+}
+
+.plate {
+  display: inline-block;
+  width: inherit;
+}
+
+
+#plate0 {
+  padding-left: 0em;
+  padding-top: 21em;
+}
+
+}

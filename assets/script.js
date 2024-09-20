@@ -49,6 +49,7 @@ const buttonLeft = document.getElementById('left');
         title.setAttribute('id', 'title' + i)
         title.className = 'title';
         title.classList.add('text');
+        title.classList.add('cap');
     
         plate.appendChild(image);
         plate.appendChild(title);

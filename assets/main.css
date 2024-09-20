@@ -122,6 +122,15 @@ button {
   cursor: pointer;
 }
 
+/*MEDIA QUERIES*/
+@media (max-width: 500px) {
+
+body {
+	color: red;
+}
+
+}
+
 
 
 
